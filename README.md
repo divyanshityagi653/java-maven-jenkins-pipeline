@@ -39,7 +39,9 @@ public class HelloWorld {
 }
 
 
-pom.xml
+🚀  POM. XML
+
+<project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>hello</artifactId>
@@ -59,26 +61,27 @@ pom.xml
     </build>
 </project>
 
- Jenkins Setup & Job Configuration
-Run Jenkins (Docker-based):
+🚀 Jenkins Setup & Job Configuration
 
-bash
+1. Run Jenkins (Docker-based):
+
 docker run -p 8080:8080 jenkins/jenkins:lts
-Configure Global Tools:
+
+2. Configure Global Tools:
 
 Add JDK 8
 
-Add Maven (e.g., Maven 3.8.6)
+ Add Maven (e.g., Maven 3.8.6)
 
-Create a Freestyle Project:
+3. Create a Freestyle Project:
 
 Source Code Management: Git (use this repository URL)
 
-Build: Invoke top-level Maven targets
+Build Step: Invoke top-level Maven targets
 
 Goals: clean package
 
-Build & Verify:
+4. Build & Verify:
 
 Run the job manually
 
@@ -86,16 +89,17 @@ Observe console output
 
 Confirm BUILD SUCCESS
 
+
 ✅ Outcome
 By completing this task, I gained hands-on experience with:
 
-Jenkins freestyle job creation
+Creating Jenkins freestyle jobs
 
-Maven-based Java builds
+Using Maven to build Java applications
 
-Integration of build tools within CI pipelines
+Configuring CI pipelines
 
-Debugging and reading Jenkins console logs
+Debugging Jenkins builds via console output
 
 
 
